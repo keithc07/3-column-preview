@@ -5,6 +5,7 @@
     justify-content: center;
     align-items: center;
     margin: 0;
+    background-color: hsl(0, 0%, 95%);
 }
 
 .card-outerbox {
@@ -98,14 +99,20 @@
 
 @media (max-width: 375px) {
     .web-body {
+        margin: 20px 0px;
         align-items: unset;
     }
     .card-outerbox {
+        box-sizing: content-box;
         flex-direction: column;
-        width: 95%;
+        width: 80%;
+        height: 60%;
+    }
+    .card-h1 {
+        margin: 10px 0px;
     }
     .card-p {
-        margin-bottom: 20px;
+        margin-bottom: 30px;
     }
     .card-innerbox-1 {
         border-bottom-left-radius: 0;
