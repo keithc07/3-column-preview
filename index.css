@@ -1,0 +1,118 @@
+.web-body {
+    display: flex;
+    width: 100vw;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+}
+
+.card-outerbox {
+    display: flex;
+    width: 60%;
+    height: 50%;
+}
+
+.card-innerbox-1 {
+    padding: 50px;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    background-color: hsl(31, 77%, 52%);
+}
+
+.card-innerbox-2 {
+    padding: 50px;
+    background-color: hsl(184, 100%, 22%);
+}
+
+.card-innerbox-3 {
+    padding: 50px;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-color: hsl(179, 100%, 13%);
+}
+
+.card-h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 2rem;
+    color: hsl(0, 0%, 95%);
+}
+
+.card-p {
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 15px;
+    font-family: 'Lexend Deca', sans-serif;
+    margin-bottom: 80px;
+    line-height: 1.7;
+}
+
+.button-1 {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px 30px;
+    border-radius: 30px;
+    color:hsl(31, 77%, 52%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.button-1:hover {
+    background-color: hsl(31, 77%, 52%);
+    color: hsl(0, 0%, 95%);
+    border-color: hsl(0, 0%, 95%);
+    border: solid;
+}
+
+.button-2 {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: hsl(184, 100%, 22%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.button-2:hover {
+    background-color: hsl(184, 100%, 22%);
+    color: hsl(0, 0%, 95%);
+    border-color: hsl(0, 0%, 95%);
+    border: solid;
+}
+
+.button-3 {
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 10px 30px;
+    border-radius: 30px;
+    color: hsl(179, 100%, 13%);
+    font-family: 'Lexend Deca', sans-serif;
+}
+
+.button-3:hover {
+    background-color: hsl(179, 100%, 13%);
+    color: hsl(0, 0%, 95%);
+    border-color: hsl(0, 0%, 95%);
+    border: solid;
+}
+
+@media (max-width: 375px) {
+    .web-body {
+        align-items: unset;
+    }
+    .card-outerbox {
+        flex-direction: column;
+        width: 95%;
+    }
+    .card-p {
+        margin-bottom: 20px;
+    }
+    .card-innerbox-1 {
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 10px;
+    }
+    .card-innerbox-3 {
+        border-top-right-radius: 0px;
+        border-bottom-left-radius: 10px;
+    }
+}
